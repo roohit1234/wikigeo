@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   
-  	before_action :find_post, only: [:show, :username, :name, :edit, :update, :destroy]
+  	before_action :find_post, only: [:show, :avatar, :username, :name, :edit, :update, :destroy]
 
 
 	def show
@@ -11,6 +11,16 @@ class UsersController < ApplicationController
 	def myposts
 	 	@posts = Post.where(:user_id => current_user.id)
 	end
+
+	def create
+	  @user = User.create( user_params )
+	end
+
+	def avatar
+	    @user = current_user
+	end
+
+
 
 
 	 private 

@@ -3,7 +3,11 @@
   <div class="col-md-4 signupbg">
 
 
-	<%= form_for @post do |f| %>
+	<%= form_for @post, html: { multipart: true }  do |f| %>
+
+		<div class="form-group">
+			<%= f.file_field :image %>
+		</div>	
 
 		<div class="form-group">
 			<%= f.label :title %>

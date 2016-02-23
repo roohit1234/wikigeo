@@ -1,20 +1,29 @@
-<h2>Profile</h2>
 
-	<h3>Username: <%= @user.username %> </h3>
-	<h3>Email: <%= @user.email %> </h3>
-
-
-<% if @user.posts.size > 0 %>
-	
-		<% @posts_post.each do |post| %>
-		    <h4><%= link_to post.title, post %></h4>
-							
-			Posted by:
-			<%= post.user.username %>
-		<% end %>
-
-<% else %>
-	<div class="row col-lg-12">
-		<div class="alert alert-danger" role="alert"><strong>The user don't have any posts yet. :(</strong></div>
+<div class="row"> 
+	<div class="col-md-1"></div>
+	<div class="col-md-4">
+	<h2>Profile</h2>
+		<%= image_tag @user.avatar.url(:thumb) %><br><br>
+		<p>Username: <br><%= @user.username %> </p>
+		<p>Email: <br><%= @user.email %> </p>
+		<p>About: <br>Hello this iam a graphic designer </p>
 	</div>	
-<% end %>	
+	<div class="col-md-6">
+		<% if @user.posts.size > 0 %>
+			
+				<% @posts_post.each do |post| %>
+					<%= link_to (image_tag post.image.url(:medium)), post %>
+				    <h4><%= link_to post.title, post %></h4>
+									
+					Posted by:
+					<%= post.user.username %>
+				<% end %>
+
+		<% else %>
+			
+				<div class="no-posts"><strong>The user don't have <br>any posts yet. :(</strong></div>
+			
+		<% end %>
+	</div>	
+
+</div>
