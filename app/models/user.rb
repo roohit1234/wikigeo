@@ -3,8 +3,10 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+         
+         has_many :posts
 
-
+  validates_presence_of :username, case_insensitive: false
 
   def login=(login)
     @login = login

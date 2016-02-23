@@ -1,10 +1,13 @@
 <% if user_signed_in? %>
-<h3> Welcome <%= current_user.username %></h3>
-
-
+ <%= current_user.username %>
 <% else %>
-
-
 <%= render("layouts/jumbotron") %>
 
 <% end %>
+
+
+
+	<% @posts.each do |post| %>
+		 <h4><%= link_to post.title, post %></h4>
+		 	<%= post.user.username %>	 
+	<% end %>

@@ -1,0 +1,20 @@
+<h2>Profile</h2>
+
+	<h3>Username: <%= @user.username %> </h3>
+	<h3>Email: <%= @user.email %> </h3>
+
+
+<% if @user.posts.size > 0 %>
+	
+		<% @posts_post.each do |post| %>
+		    <h4><%= link_to post.title, post %></h4>
+							
+			Posted by:
+			<%= post.user.username %>
+		<% end %>
+
+<% else %>
+	<div class="row col-lg-12">
+		<div class="alert alert-danger" role="alert"><strong>The user don't have any posts yet. :(</strong></div>
+	</div>	
+<% end %>	
