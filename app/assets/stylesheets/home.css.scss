@@ -1,0 +1,133 @@
+body {
+	font-family: "Proxima Nova";
+	font-weight: 100;
+}
+
+a {
+	color: #1DA1F2;
+}
+a:active {
+	text-decoration: none;
+	color: #1DA1F2;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #1DA1F2;
+    color: #fff;
+    border-color: #1DA1F2;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #1DA1F2;
+    border-color: #1DA1F2;
+    border-radius: 4px;
+    min-width:  120px;
+}
+
+.btn:focus {
+    background-color: transparent;
+    color: #2D2A2A;
+    border-color: rgba(31, 29, 29, 1);
+    border-radius: 4px;
+    min-width:  120px;
+}
+
+.btn:active {
+    background-color: transparent;
+    color: #2D2A2A;
+    border-color: rgba(31, 29, 29, 1);
+    border-radius: 4px;
+    min-width:  120px;
+} 
+
+.btnsignup {
+    background-color: #1DA1F2;
+    color: #fff;
+    border-color: #1DA1F2;
+    border-radius: 4px;
+    min-width: 120px;
+    height: 40px;
+    width: 100%;
+}
+
+.btnsignup:hover {
+    background-color: #138CD6;
+    color: #fff;
+    border-color: #1DA1F2;
+    border-radius: 4px;
+    min-width: 120px;
+    height: 40px;
+    width: 100%;
+}
+
+.btndanger {
+    background-color: #EC4040;
+    color: #fff;
+    border-color: #EC4040;
+    border-radius: 4px;
+    min-width: 120px;
+    height: 40px;
+    width: 60%;
+}
+
+.btndanger:hover {
+    background-color: #E43030;
+    color: #fff;
+    border-color: #E43030;
+    border-radius: 4px;
+    min-width: 120px;
+    height: 40px;
+    width: 60%;
+}
+
+
+.jumbobtn {
+    width: 130px;
+}
+.jumbobtn:hover {
+    width: 130px;
+}
+.jumbotron p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.jumbotron {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+
+.signupbg {
+	background-color: #fff;
+	margin: 35px auto;
+	border-radius: 5px;
+}
+
+.form-control {
+	border: 1px solid #AAB8C3;
+    border-radius: 2px;
+    height: 40px;
+}
+
+.editprofile {
+    border: 1px solid #DCDCDC;
+    padding:  20px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+
+
+

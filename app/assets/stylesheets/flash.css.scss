@@ -1,0 +1,90 @@
+
+/*flash*/
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: center;
+    height: 83px;
+    border-radius: 0;
+    font-size: 34px;
+    list-style-type: none;
+    
+    width: 100%;
+    
+    z-index: 999;
+    opacity: 0.7;
+ }
+
+.alert-alert {
+    background-color: #7BC5B5;
+    border-color: #A1D4C9;
+    color: #365D54;
+    text-align: center;
+    height: 83px;
+    border-radius: 0;
+    font-size: 34px;
+    list-style-type: none;
+    display: inline-table;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.7;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: center;
+    height: 83px;
+    border-radius: 0;
+    font-size: 34px;
+    list-style-type: none;
+    display: inline-table;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.7;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: center;
+    height: 83px;
+    border-radius: 0;
+    font-size: 34px;
+    list-style-type: none;
+    display: inline-table;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.7;
+ }
+
+ .alert-danger {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: center;
+    height: 83px;
+    border-radius: 0;
+    font-size: 34px;
+    list-style-type: none;
+    display: inline-table;
+    width: 100%;
+    
+    z-index: 999;
+    opacity: 0.7;
+ }
+
+ .close {
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 1.1;
+ }
+
+
+
