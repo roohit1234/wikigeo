@@ -1,6 +1,8 @@
 body {
 	font-family: "Proxima Nova";
 	font-weight: 100;
+    background-color: #fafafa;
+    padding-top: 70px;
 }
 
 a {
@@ -15,25 +17,123 @@ a:hover {
     text-decoration: none;
 }
 
-.btn {
-    background-color: #1DA1F2;
+.navbar-brand {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header-cover {
+    height: 600px;
+    padding: 100px;
+    margin-bottom: 14px;
     color: #fff;
-    border-color: #1DA1F2;
+    margin-top: -10px;
+}
+
+.header-cover h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.heading-cover {
+    font-size: 24px;
+    font-weight: 100;
+
+}
+
+.posts-main {
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    padding: 10px;
+    margin-bottom: 14px;
+        margin-left: 60px;
+}
+
+.lead {
+    color: #b84a39;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.lead:hover {
+    color: #b84a39;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.lead-title {
+    color: #303030;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+    float: left;
+}
+
+.lead-title:hover {
+    color: #303030;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+    float: left;
+}
+
+.lead-title:active {
+    color: #303030;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+    float: left;
+}
+
+.lead-para {
+    text-decoration: none;
+    margin-left: 30px;
+    color: #7B7878;
+    font-size: 21px;
+    line-height: 1.2;
+    float: left;
+}
+
+.lead-read {
+    color: #b84a39;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.postedby-main {
+    margin-left: 30px;
+}
+
+.btn {
+    background-color: #004e66;
+    color: #fff;
+    border-color: #004e66;
     border-radius: 4px;
     min-width: 120px;
 }
 
 .btn:hover {
     background-color: transparent;
-    color: #1DA1F2;
-    border-color: #1DA1F2;
+    color: #004e66;
+    border-color: #004e66;
     border-radius: 4px;
     min-width:  120px;
 }
 
 .btn:focus {
     background-color: transparent;
-    color: #2D2A2A;
+    color: #004e66;
     border-color: rgba(31, 29, 29, 1);
     border-radius: 4px;
     min-width:  120px;
@@ -41,16 +141,16 @@ a:hover {
 
 .btn:active {
     background-color: transparent;
-    color: #2D2A2A;
+    color: #004e66;
     border-color: rgba(31, 29, 29, 1);
     border-radius: 4px;
     min-width:  120px;
 } 
 
 .btnsignup {
-    background-color: #1DA1F2;
+    background-color: #004e66;
     color: #fff;
-    border-color: #1DA1F2;
+    border-color: #004e66;
     border-radius: 4px;
     min-width: 120px;
     height: 40px;
@@ -58,9 +158,18 @@ a:hover {
 }
 
 .btnsignup:hover {
-    background-color: #138CD6;
+    background-color: #07607B;
     color: #fff;
-    border-color: #1DA1F2;
+    border-color: #07607B;
+    border-radius: 4px;
+    min-width: 120px;
+    height: 40px;
+    width: 100%;
+}
+.btnsignup:focus {
+    background-color: #07607B;
+    color: #fff;
+    border-color: #07607B;
     border-radius: 4px;
     min-width: 120px;
     height: 40px;
@@ -119,7 +228,7 @@ a:hover {
 }
 
 .editprofile {
-    border: 1px solid #DCDCDC;
+    border: 1px solid #EAEAEA;
     padding:  20px;
 }
 
@@ -129,6 +238,17 @@ a:hover {
     font-weight: 100;
     margin: 130px auto;
 }
+
+.profile-border {
+    border: 1px solid #eee;
+}
+
+.profile-aatr {
+    color: #AAB8C3;
+    font-size: 18px;
+    line-height: 1;
+}
+
 
 .footer {
     padding: 20px;

@@ -1,29 +1,26 @@
 
 <div class="row"> 
-	<div class="col-md-1"></div>
-	<div class="col-md-4">
-	<h2>Profile</h2>
-		<%= image_tag @user.avatar.url(:thumb) %><br><br>
-		<p>Username: <br><%= @user.username %> </p>
-		<p>Email: <br><%= @user.email %> </p>
-		<p>About: <br>Hello this iam a graphic designer </p>
+	<div class="col-md-3 profile-border" align="center">
+	<h2><%= @user.name %></h2>
+		<%= image_tag @user.avatar.url(:thumb), class: "img-circle" %><br><br>
+		<p class="profile-aatr">Username: <br><%= @user.username %> </p>
+		<p class="profile-aatr">Email: <br><%= @user.email %> </p>
+		<p class="profile-aatr">About: <br><%= @user.about %> </p>
 	</div>	
-	<div class="col-md-6">
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
 		<% if @user.posts.size > 0 %>
 			
 				<% @posts_post.each do |post| %>
 					<%= link_to (image_tag post.image.url(:medium)), post %>
 				    <h4><%= link_to post.title, post %></h4>
-									
-					Posted by:
-					<%= post.user.username %>
+					
 				<% end %>
 
 		<% else %>
 			
-				<div class="no-posts"><strong>The user don't have <br>any posts yet. :(</strong></div>
+			<div class="no-posts"><strong>The user don't have <br>any posts yet. :(</strong></div>
 			
 		<% end %>
-	</div>	
-
+	</div>
 </div>
