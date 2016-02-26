@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.4'
-gem 'pg', '~> 0.18.4'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
@@ -29,6 +28,7 @@ group :development do
 end
 
 group :production do
+  gem 'pg', '~> 0.18.4'	
   gem 'rails_12factor', '~> 0.0.3'
 end
 
