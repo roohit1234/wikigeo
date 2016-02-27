@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-
+  resources :posts		
   devise_for :users, path: ""
-  resources :posts
   root "posts#index"
   get 'users/myposts'
 
