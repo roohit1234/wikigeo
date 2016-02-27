@@ -188,9 +188,15 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 4.3)
+<<<<<<< HEAD
   pg
   rails (= 4.2.4)
   rails_12factor
+=======
+  pg (~> 0.18.4)
+  rails (= 4.2.4)
+  rails_12factor (~> 0.0.3)
+>>>>>>> f913b09d82a35eda4b84fc3d6c085255b9522420
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

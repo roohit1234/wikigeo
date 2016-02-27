@@ -19,12 +19,18 @@ gem "paperclip", "~> 4.3"
 
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :production do
