@@ -30,7 +30,6 @@ end
 group :production do 
   gem 'pg' #sqlite3 gem is not supported on Heroku.
   gem 'rails_12factor'
-  gem 'thin'
 end
 
 
