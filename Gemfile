@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.2.3'
 
 
 gem 'rails', '4.2.4'
@@ -15,12 +16,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem "paperclip", "~> 4.3"
 
-
+group :development, :test do
+  gem 'byebug'	
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+end
 
 
 group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
   gem 'sqlite3'
 end
 
